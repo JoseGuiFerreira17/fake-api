@@ -1,0 +1,44 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Calculadora",
+      "price": 17.9
+    },
+    {
+      "id": "2",
+      "name": "Caneca",
+      "price": 19.9
+    },
+    {
+      "id": "3",
+      "name": "Livro",
+      "price": 29.9
+    },
+    {
+      "id": "2e88",
+      "name": "Teclado",
+      "price": "110.9"
+    },
+    {
+      "id": "7cbd",
+      "name": "Mochila",
+      "price": "235.9"
+    },
+    {
+      "id": "d1de",
+      "name": "Régua",
+      "price": "13.9"
+    },
+    {
+      "id": "8a53",
+      "name": "teste",
+      "price": "2"
+    },
+    {
+      "id": "1be8",
+      "name": "teste",
+      "price": "2"
+    }
+  ]
+}
