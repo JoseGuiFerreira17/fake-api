@@ -1,13 +1,14 @@
 import "./App.css";
 import { useState } from "react";
 import { useFetch } from "./hooks/useFetch";
+import Loading from "./components/Loading";
 
 function App() {
   const url = "http://localhost:3333/products";
   const [name, setName] = useState("");
   const [price, setPrice] = useState(0);
 
-  const { data: items, httpConfig } = useFetch(url);
+  const { data: items, httpConfig, loading } = useFetch(url);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -27,15 +28,19 @@ function App() {
     <div className="container">
       <div className="App">
         <h1>Lista de produtos</h1>
-        <ul>
-          {items &&
-            items.map((product) => (
-              <li key={product.id}>
-                <h2>{product.name}</h2>
-                <p>{formattedPrice(product.price)}</p>
-              </li>
-            ))}
-        </ul>
+        {loading ? (
+          <Loading />
+        ) : (
+          <ul>
+            {items &&
+              items.map((product) => (
+                <li key={product.id}>
+                  <h2>{product.name}</h2>
+                  <p>{formattedPrice(product.price)}</p>
+                </li>
+              ))}
+          </ul>
+        )}
       </div>
       <div className="form">
         <form onSubmit={handleSubmit} method="post">
