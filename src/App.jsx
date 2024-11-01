@@ -8,7 +8,7 @@ function App() {
   const [name, setName] = useState("");
   const [price, setPrice] = useState(0);
 
-  const { data: items, httpConfig, loading } = useFetch(url);
+  const { data: items, httpConfig, loading, error } = useFetch(url);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -16,6 +16,10 @@ function App() {
     httpConfig(product, "POST");
     setName("");
     setPrice(0);
+  };
+
+  const handleRemove = async (id) => {
+    httpConfig(id, "DELETE");
   };
 
   const formattedPrice = (value) => {
@@ -37,10 +41,14 @@ function App() {
                 <li key={product.id}>
                   <h2>{product.name}</h2>
                   <p>{formattedPrice(product.price)}</p>
+                  <button className="remove-btn" onClick={() => handleRemove(product.id)}>
+                    Remover
+                  </button>
                 </li>
               ))}
           </ul>
         )}
+        {error && <p>{error}</p>}
       </div>
       <div className="form">
         <form onSubmit={handleSubmit} method="post">
@@ -57,7 +65,8 @@ function App() {
               onChange={(e) => setPrice(e.target.value)}
             />
           </label>
-          <input type="submit" value="Adicionar" />
+          {loading && <input type="submit" disabled value="Aguarde" />}
+          {!loading && <input type="submit" value="Adicionar" />}
         </form>
       </div>
     </div>
