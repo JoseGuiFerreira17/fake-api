@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import "./Navbar.css";
 import { useState } from "react";
 
@@ -7,6 +7,14 @@ function Navbar() {
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const [search, setSearch] = useState("");
+  const navigate = useNavigate();
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+    navigate(`/search?q=${search}`);
   };
 
   return (
@@ -27,8 +35,13 @@ function Navbar() {
           </li>
         </ul>
       </div>
-      <form className="navbar-search">
-        <input type="text" placeholder="Buscar produtos..." />
+      <form className="navbar-search" onSubmit={handleSearch}>
+        <input
+          type="text"
+          placeholder="Buscar produtos..."
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+        />
         <button type="submit">Buscar</button>
       </form>
       <button className="navbar-toggle" onClick={toggleMenu}>

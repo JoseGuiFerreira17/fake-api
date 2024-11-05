@@ -1,11 +1,12 @@
-import "./Home.css";
-import { Link } from "react-router-dom";
+import { useSearchParams, Link } from "react-router-dom";
 import { useFetch } from "../hooks/useFetch";
 
-const Home = () => {
-  const url = "http://localhost:8000/products";
+function Search() {
+  const [searchParams] = useSearchParams();
+  const url = "http://localhost:8000/products?name=" + searchParams.toString().split("=")[1];
   const { data: items, loading, error } = useFetch(url);
 
+  console.log(items);
   const formattedPrice = (value) => {
     return new Intl.NumberFormat("pt-BR", {
       style: "currency",
@@ -49,6 +50,6 @@ const Home = () => {
       </ul>
     </div>
   );
-};
+}
 
-export default Home;
+export default Search;
