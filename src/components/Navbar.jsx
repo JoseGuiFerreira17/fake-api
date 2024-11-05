@@ -28,10 +28,10 @@ function Navbar() {
             <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <NavLink to="/about">Sobre</NavLink>
+            <NavLink to="/add">Adicionar</NavLink>
           </li>
           <li>
-            <NavLink to="/contact">Contato</NavLink>
+            <NavLink to="/about">Sobre</NavLink>
           </li>
         </ul>
       </div>

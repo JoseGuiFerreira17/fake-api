@@ -10,7 +10,7 @@
       "category": "Acessórios",
       "stock": 50,
       "ratings": {
-        "average": 4.0,
+        "average": 4,
         "reviews": 120
       },
       "dimensions": {
@@ -29,7 +29,7 @@
       "category": "Materiais de Escritório",
       "stock": 200,
       "ratings": {
-        "average": 4.0,
+        "average": 4,
         "reviews": 45
       },
       "material": "Aço inoxidável",
@@ -86,6 +86,71 @@
       },
       "ink_color": "Azul",
       "tip_size": "0.7 mm"
+    },
+    {
+      "id": "f4a2",
+      "name": "Caderno",
+      "price": "10",
+      "description": "Caderno universitário 200 folhas",
+      "image": "https://www.lupel.com.br/wp-content/uploads/2023/06/Mini-Caderno-Smart-Stitch-C-80-Folhas-Dac.webp",
+      "brand": "Tilibra",
+      "category": "Materiais de Escritório",
+      "stock": 100,
+      "ratings": {
+        "average": 4.5,
+        "reviews": 70
+      },
+      "dimensions": {
+        "width": "20 cm",
+        "height": "27 cm",
+        "depth": "1.5 cm"
+      }
+    },
+    {
+      "id": "d3ee",
+      "name": "Estojo",
+      "price": "12.5",
+      "description": "sggrshdsfhgrh",
+      "image": "https://grafittiartes.vteximg.com.br/arquivos/ids/219637-1000-1000/Estojo-Escolar-Simples-Lilas-Dac.jpg?v=638441342794300000",
+      "brand": "DAC",
+      "stock": "31",
+      "ratings": {
+        "average": 3,
+        "reviews": 24
+      },
+      "dimensions": {
+        "width": "20",
+        "height": "5",
+        "depth": "5"
+      },
+      "length": "20",
+      "weight": "",
+      "material": "",
+      "ink_color": "",
+      "tip_size": ""
+    },
+    {
+      "id": "4305",
+      "name": "Tabuada Do Estudante",
+      "price": "0.99",
+      "description": "Tabuada do estudante com capa flexível e folhas pautadas. Tabuada para aprendizado da multiplicação no ambiente escolar.",
+      "image": "https://irmaoshaluli.vtexassets.com/arquivos/ids/162011-1200-auto?v=638180503016870000&width=1200&height=auto&aspect=true",
+      "brand": "Tilibra",
+      "stock": "101",
+      "ratings": {
+        "average": 5,
+        "reviews": 121
+      },
+      "dimensions": {
+        "width": "10",
+        "height": "14.5",
+        "depth": "0.2"
+      },
+      "length": "",
+      "weight": "",
+      "material": "Papel",
+      "ink_color": "",
+      "tip_size": ""
     }
   ]
 }

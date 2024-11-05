@@ -1,0 +1,39 @@
+.nf-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+  color: #333;
+  text-align: center;
+}
+
+.nf-h1 {
+  font-size: 6rem;
+  font-weight: bold;
+  margin: 0;
+  color: #ff6347;
+}
+
+.nf-p {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  color: #666;
+}
+
+.nf-a {
+  font-size: 1.2rem;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid #007bff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nf-a:hover {
+  background-color: #007bff;
+  color: #fff;
+}
