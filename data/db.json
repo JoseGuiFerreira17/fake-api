@@ -3,27 +3,89 @@
     {
       "id": "7cbd",
       "name": "Mochila",
-      "price": "235.9"
+      "price": "235.9",
+      "description": "Mochila notebook executiva preta Seanite",
+      "image": "https://images.tcdn.com.br/img/img_prod/886231/mochila_notebook_executiva_preta_seanite_5177_1_35f246a872a91716b01f1aee1fad94e4_20231002115324.jpg",
+      "brand": "Seanite",
+      "category": "Acessórios",
+      "stock": 50,
+      "ratings": {
+        "average": 4.0,
+        "reviews": 120
+      },
+      "dimensions": {
+        "width": "30 cm",
+        "height": "40 cm",
+        "depth": "15 cm"
+      }
     },
     {
       "id": "d1de",
       "name": "Régua",
-      "price": "13.9"
+      "price": "13.9",
+      "description": "Régua de aço Keramik 30 cm",
+      "image": "https://cdn.awsli.com.br/1500x1500/1277/1277487/produto/50197493/regua-de-aco-keramik-30-cm-vbvo4lnjbf.jpg",
+      "brand": "Keramik",
+      "category": "Materiais de Escritório",
+      "stock": 200,
+      "ratings": {
+        "average": 4.0,
+        "reviews": 45
+      },
+      "material": "Aço inoxidável",
+      "length": "30 cm"
     },
     {
       "id": "8a53",
-      "name": "teste",
-      "price": "2"
+      "name": "Lápis",
+      "price": "2",
+      "description": "Lápis preto nº2",
+      "image": "https://lojacolegioscj.com.br/image/cache/data/api/produtos/16883-515x800.jpg?1652119600",
+      "brand": "Faber-Castell",
+      "category": "Materiais de Escritório",
+      "stock": 150,
+      "ratings": {
+        "average": 3,
+        "reviews": 85
+      },
+      "length": "18 cm",
+      "weight": "15 g"
     },
     {
       "id": "1be8",
-      "name": "teste",
-      "price": "2"
+      "name": "Borracha",
+      "price": "1",
+      "description": "Borracha branca",
+      "image": "https://m.media-amazon.com/images/I/61xb1VwblKL._AC_UF894,1000_QL80_.jpg",
+      "brand": "BIC",
+      "category": "Materiais de Escritório",
+      "stock": 300,
+      "ratings": {
+        "average": 5,
+        "reviews": 60
+      },
+      "dimensions": {
+        "width": "6 cm",
+        "height": "2 cm",
+        "depth": "1.5 cm"
+      },
+      "material": "Goma"
     },
     {
       "id": "a3cf",
-      "name": "Broca",
-      "price": "010"
+      "name": "Caneta",
+      "price": "1.5",
+      "description": "Caneta esferográfica azul",
+      "image": "https://cdn.iset.io/assets/50203/produtos/2149/bic-cristal-dura-mais.jpg",
+      "brand": "BIC",
+      "category": "Materiais de Escritório",
+      "stock": 250,
+      "ratings": {
+        "average": 5,
+        "reviews": 100
+      },
+      "ink_color": "Azul",
+      "tip_size": "0.7 mm"
     }
   ]
 }
